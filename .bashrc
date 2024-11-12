@@ -17,6 +17,8 @@ alias llf='ls -lFh | grep "^-"'
 alias llfi='ls -alFh | grep "^-"'
 alias llft='ls -ltrFh | grep "^-"'
 alias llfti='ls -altrFh | grep "^-"'
+alias llg='ls -la | grep'
+alias llgt='ls -latr | grep'
 
         # explication options
         # -l = affichage en liste
@@ -29,7 +31,8 @@ alias llfti='ls -altrFh | grep "^-"'
         # -t = trie les fichiers et dossier par date de modification (plus récent en haut)
         #       -r = inverse le trie (plus récent en bas)
         # -o = affiche en liste, mais sans afficher le colonne du groupe
-        # | grep ^-' = affiche uniquement les fichiers
+        # | grep = effectue une recherche
+        # | grep ^-' = affiche uniquement les fichiers 
 
 # nano alias
 alias nnl='nano -lm'
