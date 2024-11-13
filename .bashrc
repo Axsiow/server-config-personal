@@ -1,5 +1,5 @@
 if [ "$color_prompt" = yes ]; then
-     export PS1='\[\033[01;35m\]┌──${debian_chroot:+($debian_chroot)}(\[\033[00m\]\u@\h\[\033[01;35m\])-[\[\033[>
+ export PS1='\[\033[01;35m\]┌──${debian_chroot:+($debian_chroot)}(\[\033[00m\]\u@\h\[\033[01;35m\])-[\[\033[01;34m\]\w\[\033[01;35m\]]$(if git rev-parse --show-toplevel > /dev/null 2>&1; then echo "\[\033[01;35m\]-[\[\033[01;32m\]$(basename $(git rev-parse --show-toplevel))\[\033[01;35m\]]"; fi)\[\033[01;35m\]$(parse_git_branch)\[\033[01;35m\]\n└─\[\033[00m\]$ '     
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
